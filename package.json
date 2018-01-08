@@ -1,0 +1,17 @@
+{
+  "name": "vinayqnabot",
+  "version": "1.0.0",
+  "description": "Q&A Bot service for Frequently Asked Questions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "botbuilder-cognitiveservices": "^1.1.0",
+    "dotenv": "^4.0.0",
+    "querystring": "^0.2.0",
+    "request": "^2.81.0",
+    "restify": "^4.3.2"
+  }
+}

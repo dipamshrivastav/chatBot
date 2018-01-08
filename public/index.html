@@ -1,0 +1,55 @@
+<!-- http:/CopperWebBot.azurewebsites.net/ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .parent_div {
+            background-color: #14256c;
+            color: #fff;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 8px 4px 4px 4px;
+            position: fixed;
+            bottom: 0;
+            right: 30px;
+            width: 300px;
+        }
+        
+        .titlebar_div {
+            cursor: pointer;
+            padding-bottom: 4px;
+        }
+        
+        .chat_div {
+            background-color: #fff;
+            height: 460px;
+            overflow: hidden;
+        }
+    </style>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+</head>
+
+<body>
+    <div class=parent_div>
+        <div class=titlebar_div>
+            <img src=http://www.cmegroup.com/etc/clientlibs/cmegroup/cmegroupClientLibs/images/favicon.ico> HelpDeskBot
+        </div>
+        <div class=chat_div>
+		
+            <iframe src="https://webchat.botframework.com/embed/VInayQnABot?s=42EBdgglKKQ.cwA.LYg.m052I_K31i2LFiztSQrYfotScqaK-TS_bgHve6VolFg"
+                style="height: 500px; width: 100%; margin-top: -40px;"></iframe>
+        </div>
+        <span class="skype-button bubble " data-bot-id="5289b3be-0f1a-4412-80c3-c8f64f110f7b"></span>
+    </div>
+
+    <script type="text/javascript">
+        jQuery(".parent_div .titlebar_div").click(function () { $(".parent_div .chat_div").slideToggle(); });
+        jQuery(".parent_div .chat_div").hide();
+    </script>
+
+</body>
+
+</html>
